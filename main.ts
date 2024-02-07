@@ -1,5 +1,5 @@
-namespace joistick_bit_V1 {
-    export function test() {
+namespace joistick_bit_v1 {
+    export function test(type: number) {
         
     }
 }

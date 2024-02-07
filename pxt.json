@@ -3,7 +3,6 @@
     "description": "",
     "dependencies": {
         "core": "*",
-        "pxt-kitronik-motor-driver": "github:kitronikltd/pxt-kitronik-motor-driver#v0.0.8",
         "microphone": "*"
     },
     "files": [
