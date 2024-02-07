@@ -2,8 +2,7 @@
     "name": "joistick_bit_V1",
     "description": "",
     "dependencies": {
-        "core": "*",
-        "microphone": "*"
+        "core": "*"
     },
     "files": [
         "main.ts"
