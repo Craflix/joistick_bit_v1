@@ -2,8 +2,7 @@
     "name": "joistick_bit_v1",
     "description": "",
     "dependencies": {
-        "core": "*",
-        "OLED12864_I2C": "github:makecode-extensions/oled12864_i2c#v1.5.0"
+        "core": "*"
     },
     "files": [
         "custom.ts"
