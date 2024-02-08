@@ -56,4 +56,20 @@ namespace joistickbit {
         }
         return value;
     }
+    /**
+     * Get value of lever X cord
+     */
+    //% blockId=leverX
+    //% block="get posision of leverX"
+    export function leverX():number{
+        return pins.analogReadPin(AnalogPin.P0);
+    }
+    /**
+     * Get value of lever Y cord
+     */
+    //% blockId=leverY
+    //% block="get posision of leverY"
+    export function leverY(): number {
+        return pins.analogReadPin(AnalogPin.P1);
+    }
 }
