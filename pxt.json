@@ -1,15 +1,13 @@
 {
-    "name": "joistick_bit_V1",
+    "name": "joistick_bit_v1",
     "description": "",
     "dependencies": {
         "core": "*"
     },
     "files": [
-        "main.ts"
+        "custom.ts"
     ],
-    "testFiles": [
-        "test.ts"
-    ],
+    "testFiles": [],
     "targetVersions": {
         "target": "6.0.25",
         "targetId": "microbit"

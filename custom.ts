@@ -1,0 +1,59 @@
+
+/**
+* Use this file to define custom functions and blocks.
+* Read more at https://makecode.microbit.org/blocks/custom
+*/
+
+enum buttons_list {
+    //% block="A"
+    A,
+    //% block="B"
+    B,
+    //% block="C"
+    C,
+    //% block="D"
+    D,
+    //% block="E"
+    E,
+    //% block="F"
+    F
+}
+//% weight=200 color=#1f7a7a icon=""
+namespace joistick_bit_v1 {
+    /**
+     * Get button state
+     */
+    //% blockId=buttons_get_value
+    //% block="button %button is pressed"
+    export function buttons(button: buttons_list): boolean {
+        let value = false
+        if (pins.analogReadPin(AnalogPin.P2) < 256) {
+            if (button == 0) {
+                value = true
+            }
+        } else if (pins.analogReadPin(AnalogPin.P2) < 597) {
+            if (button == 1) {
+                value = true
+            }
+        } else if (pins.analogReadPin(AnalogPin.P2) < 725) {
+            if (button == 2) {
+                value = true
+            }
+        } else if (pins.analogReadPin(AnalogPin.P2) < 793) {
+            if (button == 3) {
+                value = true
+            }
+        } else if (pins.analogReadPin(AnalogPin.P2) < 836) {
+            if (button == 5) {
+                value = true
+            }
+        } else if (pins.analogReadPin(AnalogPin.P2) < 938) {
+            if (button == 4) {
+                value = true
+            }
+        } else {
+            value = false
+        }
+        return value;
+    }
+}
