@@ -18,12 +18,12 @@ enum buttons_list {
     //% block="F"
     F
 }
-//% weight=200 color=#1f7a7a icon=""
+//% weight=200 color=#1f7a7a icon="\uf11b" block="Joystickbit"
 namespace joistick_bit_v1 {
     /**
      * Get button state
      */
-    //% blockId=buttons_get_value
+    //% blockId=buttons_get_state
     //% block="button %button is pressed"
     export function buttons(button: buttons_list): boolean {
         let value = false
