@@ -4,7 +4,7 @@
 * Read more at https://makecode.microbit.org/blocks/custom
 */
 
-enum buttons_list {
+enum button {
     //% block="A"
     A,
     //% block="B"
@@ -19,13 +19,13 @@ enum buttons_list {
     F
 }
 //% weight=200 color=#1f7a7a icon="\uf11b" block="Joystickbit"
-namespace joistick_bit_v1 {
+namespace joistickbit {
     /**
      * Get button state
      */
     //% blockId=buttons_get_state
     //% block="button %button is pressed"
-    export function buttons(button: buttons_list): boolean {
+    export function getbuttonval(button: button): boolean {
         let value = false
         if (pins.analogReadPin(AnalogPin.P2) < 256) {
             if (button == 0) {
